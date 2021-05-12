@@ -1,0 +1,38 @@
+<tr>
+    <th scope="row">1</th>
+    <td>movies[i].Nombre</td>
+    <td>movies[i].Genero</td>
+    <td>movies[i].Duracion</td>
+    <td>movies[i].ID_sala</td>
+    <td class="d-flex justify-content-center">
+        <a href="" class="btn btn-sm btn-success me-2 text-light">
+            <i class="bi bi-eye-fill"></i>
+        </a>
+        <a href="" class="btn btn-sm btn-warning me-2 text-dark">
+            <i class="bi bi-pencil-fill"></i>
+        </a>
+        <a href="" class="btn btn-sm btn-danger me-2 text-light">
+            <i class="bi bi-trash-fill"></i>
+        </a>
+    </td>
+</tr>
+
+let tableElement = 
+`<tr>
+    <th scope="row">`+ movies[i].ID + `</th>
+    <td>`+ movies[i].Nombre + `</td>
+    <td>`+ movies[i].Genero + `</td>
+    <td>`+ movies[i].Duracion + `</td>
+    <td>`+ movies[i].ID_sala + `</td>
+    <td class="d-flex justify-content-center">
+        <a href="" class="btn btn-sm btn-success me-2 text-light">
+            <i class="bi bi-eye-fill"></i>
+        </a>
+        <a href="" class="btn btn-sm btn-warning me-2 text-dark">
+            <i class="bi bi-pencil-fill"></i>
+        </a>
+        <a href="" class="btn btn-sm btn-danger me-2 text-light">
+            <i class="bi bi-trash-fill"></i>
+        </a>
+    </td>
+</tr>`;

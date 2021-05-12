@@ -1,0 +1,7 @@
+`<h5 class="mb-4">`+movies[i].Nombre`</h5>
+<p>Genero: `+movies[i].Genero</p>
+<p>Duracion:`+ movies[i].Duracion</p>
+<p>Actores:`+ movies[i].Actores</p>
+<p>Directores:`+ movies[i].Directores</p>
+<p>Sala:`+ movies[i].ID_sala</p>
+<p>movies[i].Sinopsis</p>

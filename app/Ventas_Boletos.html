@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>La Pantallona</title>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid border border-light p-1" style="background-color:#22262B;">
+        <div class="d-flex justify-content-between align-items-center row">
+            <div class="col">
+                <img src="img/Logo_LaPantallona.png" alt="ImagenLogo" width="150px" height="55px">
+            </div>
+            <div class="col border border-light p-1 d-flex justify-content-around">
+                <a href="" class="btn btn-secondary btn-sm">Entradas</a>
+                <a href="" class="btn btn-secondary btn-sm">Productos</a>
+                <a href="" class="btn btn-secondary btn-sm">Usuarios</a>
+                <a href="" class="btn btn-secondary btn-sm">Reportes</a>
+                <a href="" class="btn btn-secondary btn-sm">Peliculas</a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-secondary btn-sm dropdown-toggle me-3" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Bienvenido, Usuario <i class="bi bi-person-fill"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><button type="button" class="dropdown-item" id="logout">Cerrar Sesión</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid border border-light">
+        <div class="row border border-primary">
+            <div class="col">
+               <div class="row d-flex justify-content-around">
+                   <div class="col border border-success p-3">
+                       <div class="card" style="width: 18rem;">
+                           <img src="https://pics.filmaffinity.com/Ratatouille-602107251-large.jpg" class="card-img-top"
+                               alt="...">
+                           <div class="card-body">
+                               <h5 class="card-title">Pelicula 1</h5>
+                               <p class="card-text">Horarios de Peliculas</p>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col border border-success p-3">
+                       <div class="card" style="width: 18rem;">
+                           <img src="https://pics.filmaffinity.com/Ratatouille-602107251-large.jpg"
+                               alt="..." class="card-img-top">
+                           <div class="card-body">
+                               <h5 class="card-title">Pelicula 1</h5>
+                               <p class="card-text">Horarios de Peliculas</p>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                               <a href="#" class="btn btn-primary">12:30</a>
+                           </div>
+                       </div>
+                       
+                   </div>
+               </div> 
+            </div>
+            <div class="col-3 border border-success">
+                <div class="container border border-secondary mt-2">
+                    <div class="col border border-secondary p-1 mt-2 ">Venta de Boletos</div>
+                    <div class="row p-1 mt-2 ">
+                        <div class="col border border-secondary "> Ratatouille</div>
+                        <div class="col border border-secondary ">Horario</div>
+                    </div>
+                    <div class="col height">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

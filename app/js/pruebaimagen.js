@@ -1,0 +1,1 @@
+<img src='data:image/jpeg;charset=utf-8;base64,`+base64String+`'/>
