@@ -287,7 +287,7 @@ const MovieCard = ({ movie, selectedMovie }) => (
                 <img src={movie.Imagen} class="card-img-top imagen-card" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{movie.Nombre}</h5>
-                    <button className="btn btn-primary" onClick={() => selectedMovie(movie.Nombre, movie.Hora, movie.Precio, movie.PrecioNino)}>{movie.Hora}</button>
+                    <button className="btn btn-primary" onClick={() => selectedMovie(movie.Nombre, movie.Hora.slice(0, -3), movie.Precio, movie.PrecioNino)}>{movie.Hora.slice(0, -3)}</button>
                 </div>
             </div>
         </div>

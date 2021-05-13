@@ -1,7 +1,7 @@
 import { getMovies, getMovie, createMovie, updateMovie, deleteMovie } from './movies';
 import { getProducts, getProduct, createProduct, updateProduct, deleteProduct } from './products';
 import { Login, getUser, userLogout } from './auth';
-import { ticketSale, productSale } from './sales';
+import { ticketSale, productSale, getProductSales, getTicketSales } from './sales';
 
 export{
     getMovies,
@@ -18,5 +18,7 @@ export{
     getUser,
     userLogout,
     ticketSale,
-    productSale
+    productSale,
+    getProductSales,
+    getTicketSales
 };

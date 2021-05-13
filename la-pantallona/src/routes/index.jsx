@@ -5,6 +5,7 @@ import { ProductList, ProductForm } from '../components/products';
 import { TicketSales, ProductSales } from '../components/sales';
 import LoginComponent from '../components/login';
 import { Home } from '../components/common'
+import { TicketReport, ProductReport } from '../components/reports'
 
 
 const Routes = () => {    
@@ -23,9 +24,8 @@ const Routes = () => {
             <Route exact path="/peliculas/editarpelicula/:movieId" component={MovieForm} />
             <Route exact path="/peliculas/:movieId" component={MovieDetail} />
             <Route exact path="/peliculas" component={MovieList} />
-            <Route exact path="/reportes">
-                <p>Pagina Reportes</p>
-            </Route>
+            <Route exact path="/reportes" component={TicketReport} />
+            <Route exact path="/reportesProductos" component={ProductReport} />
         </Switch>
 
     )

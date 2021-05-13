@@ -29,3 +29,33 @@ export const productSale = async (data) => {
     }
     
 }
+
+export const getTicketSales = async (data) => {
+    try {
+        const response = await axios.get('https://lapantallona-api.herokuapp.com/ventas/boletos', data);
+        if (response.data){
+            return response.data;
+        }
+    } catch (error) {
+        return {
+            hasError: true,
+            error
+        }
+    }
+    
+}
+
+export const getProductSales = async (data) => {
+    try {
+        const response = await axios.get('https://lapantallona-api.herokuapp.com/ventas/productos', data);
+        if (response.data){
+            return response.data;
+        }
+    } catch (error) {
+        return {
+            hasError: true,
+            error
+        }
+    }
+    
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
 import Logo from '../../assets/Logo_LaPantallona.png';
-import { Login } from '../../services';
+import { Login, getUser } from '../../services';
 import toast from 'react-hot-toast';
 
 
@@ -14,6 +14,15 @@ export default class LoginComponent extends Component {
                 password: "",
             }
         }
+    }
+
+    clearData = () => {
+        this.setState({
+            user: {
+                username: "",
+                password: ""
+            }
+        })
     }
 
     handleChange = (event) => {
@@ -31,6 +40,8 @@ export default class LoginComponent extends Component {
         if (!username.hasError) {
             sessionStorage.setItem('isAuth', "true");
             sessionStorage.setItem('username', user.username);
+            const userData = await getUser()
+            console.log(userData)
             toast.success("Inicio de Sesión Correcto, Bienvenido " + user.username);
             setTimeout(() => { window.location.replace("/home"); }, 500);
         }
@@ -87,7 +98,7 @@ export default class LoginComponent extends Component {
                                             </div>
                                             <div className="d-flex justify-content-center">
                                                 <button type="button" className="btn btn-outline-secondary me-3" id="login_post" onClick={() => this.buttonLogin()}>Iniciar Sesión</button>
-                                                <button type="reset" className="btn btn-outline-secondary">Limpiar</button>
+                                                <button type="button" className="btn btn-outline-secondary" onClick={() => this.clearData()}>Limpiar</button>
                                             </div>
                                         </form>
                                     </div>
