@@ -37,15 +37,13 @@ export default class TicketReport extends Component {
         return (
             <>
                 <div className="container p-4 mt-5 w-75">
-                    <div className="row">
-                        <div className="col">
-                            <a href="/reportes" className="btn btn-primary me-4">Reporte de Boletos</a>
-                            <a href="/reportesProductos" className="btn btn-success">Reporte de Productos</a>
-                        </div>
-                    </div>
                     <div className="row p-3 table-detail mt-4">
                         <div className="col d-flex align-items-center">
                             <h4 className="text-light">Reporte de Venta de Boletos</h4>
+                        </div>
+                        <div className="col d-flex justify-content-end">
+                            <a href="/reportes" className="btn btn-primary me-4">Reporte de Boletos</a>
+                            <a href="/reportesProductos" className="btn btn-success">Reporte de Productos</a>
                         </div>
                     </div>
                     <div className="row table-principal">
