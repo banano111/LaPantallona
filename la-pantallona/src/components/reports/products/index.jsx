@@ -38,7 +38,7 @@ export default class ProductReport extends Component {
         return (
             <>
                 <div className="container p-4 mt-5 w-75">
-                    <div className="row p-3 table-detail mt-4">
+                    <div className="row p-3 table-detail">
                         <div className="col d-flex align-items-center">
                             <h4 className="text-light">Reporte de Venta de Productos</h4>
                         </div>
