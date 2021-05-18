@@ -53,7 +53,7 @@ export default class ProductList extends Component {
     }
 
     deleteProduct = async (buttonProductId) => {
-        if (window.confirm('¿Deseas Eliminar esta Pelicula?')) {
+        if (window.confirm('¿Deseas Eliminar esta Producto?')) {
             try {
                 const productId = buttonProductId;
                 const response = await deleteProduct(productId);
