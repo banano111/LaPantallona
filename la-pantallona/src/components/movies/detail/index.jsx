@@ -50,7 +50,7 @@ export default class MovieDetail extends Component {
 
         return (
             <>
-                <div className="container p-4 w-75">
+                <div className="container p-4 w-75 mt-5">
                     <div className="row p-3 detail">
                         <div className="col d-flex align-items-center">
                             <h4 className="text-light">Detalle de Pelicula</h4>
@@ -91,7 +91,7 @@ const MovieCard = ({ movie }) => (
         <p>Actores: {movie.Actores}</p>
         <p>Directores: {movie.Directores}</p>
         <p>Sala: {movie.ID_sala}</p>
-        <p>Genero: {movie.Genero}</p>
+        <p>Sinopsis: {movie.Sinopsis}</p>
     </>
 );
 
