@@ -42,13 +42,13 @@ npm install
 
 ## Screenshots 🖥️
 
-![Screenshot 1](/Plantillas HTML/1.png "Screenshot 1")
+![Screenshot 1](/Screenshots/1.png)
 
 
 
-![Screenshot 2](/Plantillas HTML/2.png "Screenshot 2")
+![Screenshot 2](/Screenshots/2.png)
 
 
 
-![Screenshot 3](/Plantillas HTML/3.png "Screenshot 3")
+![Screenshot 3](/Screenshots/3.png)
 
